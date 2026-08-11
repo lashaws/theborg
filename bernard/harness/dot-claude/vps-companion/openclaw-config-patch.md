@@ -31,6 +31,10 @@ whatsapp: {
 }
 ```
 
+`{{PATIENT_PHONE_E164}}` and `{{FAMILY_PHONE_E164}}` are documentation-only
+placeholders. Substitute the real E.164 values only in the ignored, machine-local
+OpenClaw configuration; never commit the rendered config or the real numbers.
+
 Linking: the gateway will print a QR on first start with WhatsApp enabled
 (`openclaw channels login whatsapp` on some builds). Link a **dedicated number**
 — the bot speaks as whatever account is linked.
